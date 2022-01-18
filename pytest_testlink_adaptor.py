@@ -449,7 +449,7 @@ def report_result(test_name, status, duration, build=None, platform=None):
                                      execduration='%.2f'
                                      % round(duration/60, 2))
 
-            print('TestLink {tc}: {status}'.format(tc=test_id, status=status))
+            # print('TestLink {tc}: {status}'.format(tc=test_id, status=status))
 
         except TestLinkError as exc:
             print('testlink: WARN: Unable to update'
